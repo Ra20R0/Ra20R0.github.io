@@ -1,35 +1,73 @@
-.body {
+/* Стиль для всего документа */
+body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  line-height: 1.375;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
+/* Стиль для заголовка */
 .page-header {
-  width: 457px;
-  height: 25px;
-  top: 61px;
-  left: 732px;
-  gap: 50px;
-}
-
-.page-header__nav-link {
-  margin: 0 25px;
-  color: #000000;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
 }
 
 .page-header__logo {
-  background-color: rgba(31, 30, 30, 1);
-  width: 102.16px;
-  height: 23px;
-  top: 50px;
-  left: 21.91px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
 }
 
+.page-header__nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header__nav-link {
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Стиль для главной секции */
+.main {
+  padding: 20px;
+}
+
+/* Стиль для разделов внутри главной секции */
+.home-offers,
+.home-about,
+home-upcoming,
+.home-listing,
+.home-contacts {
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  min-height: 200px;
+}
+
+/* Стиль для точки */
+.home-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* Стиль для подвала */
 .page-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
